@@ -1,6 +1,7 @@
 import { assertEquals } from "@std/assert";
-import { add } from "./main.ts";
+import { multiply } from "./lib.ts";
 
-Deno.test(function addTest() {
-  assertEquals(add(2, 3), 5);
+Deno.test(function multiplyTest() {
+  assertEquals(multiply(2, 2), 4);
+  assertEquals(multiply(2, 3), 6);
 });
